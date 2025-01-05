@@ -9,29 +9,36 @@ Cyclic Training: Iterate training over multiple rounds and save the model after 
 Quality control: Ensure that the generated antimicrobial peptides meet specific biochemical properties.
 
 2. Technical characteristics
+
 2.1 Deep learning model
 Model architecture: GRU (Gated Recurrent Unit) is used as the core model, and the features of amino acid sequences are automatically extracted through multi-layer neural networks.
 Training data: a large-scale dataset of known amino acid sequences is used for training to ensure that the model has good generalisation ability.
+
 2.2 Biological constraints
 Net charge: the net charge of the generated sequence needs to be greater than or equal to 3.
 Hydrophobicity ratio: the hydrophobic amino acid ratio of the generated sequence should be between 0.4 and 0.6.
 Aromatic amino acids: the resulting sequence must contain at least one aromatic amino acid.
 Cysteine residues: the number of cysteine residues in the generated sequence must be 0 or 2.
+
 2.3 Logging and Debugging
 Logging: Key information during the generation process will be recorded in the log file, including generated sequences, validation results, etc.
 Debugging support: Detailed error messages and exception handling mechanisms are provided to facilitate debugging and optimisation by developers.
 
-3. Development Environment
+4. Development Environment
+   
 3.1 Hardware Requirements
 CPU: It is recommended to use a multi-core processor, this software development uses NVIDIA GeForce RTX 3090, driver version 550.90.07, CUDA version 12.4 as the environment for training models.
 Memory: At least 4GB
 Storage: at least 10GB of available space
+
 3.2 Software Requirements
 Operating system: Linux
 Python: version 3.7 and above
 PyTorch: 1.7 and above
 Other dependent libraries: pickle, tqdm, logging
+
 4. Installation and use
+
 4.1 Installation steps
 Install Python: Make sure Python 3.7 or above is installed on your system.
 Install dependencies: Use pip to install the required dependencies.
@@ -47,6 +54,7 @@ train.py
 trained_model.pth
 and the folder: tokenizer
 The folder tokenizer contains the file simple_tokenizer.py
+
 4.2 Usage
 Load the Tokenizer:
 tokenizer_path = ‘tokenizer.pkl’
@@ -67,6 +75,7 @@ generated_sequences = generate_sequences(tokenizer, model.state_dict(), device, 
 Decode the sequences:
 decoded_sequences = decode_sequences(generated_sequences, tokenizer)
 write_sequences_to_file(decoded_sequences, filename=‘generated_sequences.txt’)
+
 5. Run the example
 You can directly use our trained model to run, here we provide both AMP generator using CPU and AMP generator using GPU accelerated computation:
 # Run the generator using CPU
