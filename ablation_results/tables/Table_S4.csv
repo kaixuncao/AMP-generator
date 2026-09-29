@@ -1,0 +1,5 @@
+method,description,n_seeds,validity_rate_fmt,diversity_fmt,mean_len_fmt,js_length_fmt,aa_L1_fmt,js_2mer_fmt,js_3mer_fmt
+bigram_markov,First-order Markov chain over residues,3,1.0000 ± 0.0000,1.0000 ± 0.0000,27.7733 ± 0.4277,0.0743 ± 0.0016,0.0127 ± 0.0005,0.0528 ± 0.0011,0.3227 ± 0.0008
+freq_matched,Residues drawn at training-set frequencies,3,1.0000 ± 0.0000,1.0000 ± 0.0000,28.0133 ± 0.3853,0.0691 ± 0.0029,0.0157 ± 0.0004,0.1298 ± 0.0022,0.3571 ± 0.0035
+random,Uniform random over 20 canonical residues,3,1.0000 ± 0.0000,1.0000 ± 0.0000,28.4333 ± 0.1747,0.0752 ± 0.0083,0.4290 ± 0.0059,0.3240 ± 0.0016,0.4990 ± 0.0004
+training_sample,Copied from the training set (COPY ORACLE),3,1.0000 ± 0.0000,0.9655 ± 0.0035,27.9033 ± 0.5784,0.0748 ± 0.0080,0.0194 ± 0.0053,0.0559 ± 0.0011,0.2437 ± 0.0058

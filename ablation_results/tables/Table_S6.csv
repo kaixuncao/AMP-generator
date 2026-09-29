@@ -1,0 +1,15 @@
+group,n,n_generated,mean_prob,sd_prob,frac_prob_ge_0.5,js_2mer,js_3mer,js_4mer,metric,mean_max_identity,global_max_identity,frac_identity_gt_0.90,frac_exact_copy
+Baseline: bigram_markov,2000,2000.0,0.6037,0.1577,0.7575,0.0540 ± 0.0022,0.3225 ± 0.0034,0.7926 ± 0.0017,smith_waterman_blosum62,0.6813,1.0,0.017,0.017
+Baseline: freq_matched,2000,2000.0,0.6059,0.1517,0.7745,0.1326 ± 0.0028,0.3601 ± 0.0038,0.8142 ± 0.0018,smith_waterman_blosum62,0.6678,1.0,0.009,0.009
+Baseline: random,2000,2000.0,0.4251,0.1558,0.3365,0.3242 ± 0.0035,0.5004 ± 0.0042,0.9011 ± 0.0009,smith_waterman_blosum62,0.6266,1.0,0.0085,0.0085
+Baseline: training_sample,2000,2000.0,0.7182,0.168,0.8945,0.0555 ± 0.0023,0.2399 ± 0.0025,0.6132 ± 0.0043,smith_waterman_blosum62,0.9999,1.0,0.9995,0.9995
+Generated (GRU),1982,1998.0,0.5835,0.1744,0.7185,0.1277 ± 0.0037,0.3201 ± 0.0042,0.7825 ± 0.0017,smith_waterman_blosum62,0.7005,1.0,0.0605,0.0494
+"Generated (GRU, T=0.8)",1986,2000.0,0.702,0.1536,0.9063,0.1115 ± 0.0044,0.2943 ± 0.0036,0.6665 ± 0.0042,smith_waterman_blosum62,0.8505,1.0,0.43,0.3369
+"Generated (GRU, T=1)",1993,2000.0,0.6699,0.1665,0.853,0.0753 ± 0.0025,0.2712 ± 0.0025,0.6978 ± 0.0021,smith_waterman_blosum62,0.789,1.0,0.2449,0.1927
+"Generated (GRU, T=1.2)",1988,2000.0,0.6272,0.1758,0.7812,0.0877 ± 0.0033,0.2827 ± 0.0031,0.7299 ± 0.0015,smith_waterman_blosum62,0.7476,1.0,0.1413,0.1041
+"Generated (GRU, T=1.5)",1982,1998.0,0.5835,0.1744,0.7185,0.1277 ± 0.0037,0.3201 ± 0.0042,0.7825 ± 0.0017,smith_waterman_blosum62,0.7005,1.0,0.0605,0.0494
+"Generated (GRU, no special)",0,2000.0,,,,no valid sequences,no valid sequences,no valid sequences,smith_waterman_blosum62,,,,
+"Generated (GRU, with special)",1982,1998.0,0.5835,0.1744,0.7185,0.1277 ± 0.0037,0.3201 ± 0.0042,0.7825 ± 0.0017,smith_waterman_blosum62,0.7005,1.0,0.0605,0.0494
+Generated (LSTM),1983,2000.0,0.5699,0.1797,0.6717,0.1364 ± 0.0032,0.3340 ± 0.0030,0.7975 ± 0.0012,smith_waterman_blosum62,0.6998,1.0,0.056,0.0489
+Real AMP (out-of-fold),3992,,0.7726,0.2007,0.8873,,,,,,,,
+Real non-AMP (out-of-fold),3992,,0.2517,0.1816,0.119,,,,,,,,
