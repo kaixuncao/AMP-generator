@@ -1,0 +1,13 @@
+group,n_query,n_generated,n_reference,metric,mean_max_identity,median_max_identity,global_max_identity,frac_identity_gt_0.90,frac_exact_copy
+"Generated (GRU, with special)",1982,1998,26890,smith_waterman_blosum62,0.7005,0.6667,1.0,0.0605,0.0494
+"Generated (GRU, no special)",0,2000,26890,smith_waterman_blosum62,,,,,
+Generated (GRU),1982,1998,26890,smith_waterman_blosum62,0.7005,0.6667,1.0,0.0605,0.0494
+Generated (LSTM),1983,2000,26890,smith_waterman_blosum62,0.6998,0.6667,1.0,0.056,0.0489
+Baseline: random,2000,2000,26890,smith_waterman_blosum62,0.6266,0.6,1.0,0.0085,0.0085
+Baseline: freq_matched,2000,2000,26890,smith_waterman_blosum62,0.6678,0.6667,1.0,0.009,0.009
+Baseline: training_sample,2000,2000,26890,smith_waterman_blosum62,0.9999,1.0,1.0,0.9995,0.9995
+Baseline: bigram_markov,2000,2000,26890,smith_waterman_blosum62,0.6813,0.6667,1.0,0.017,0.017
+"Generated (GRU, T=0.8)",1986,2000,26890,smith_waterman_blosum62,0.8505,0.8571,1.0,0.43,0.3369
+"Generated (GRU, T=1.2)",1988,2000,26890,smith_waterman_blosum62,0.7476,0.7208,1.0,0.1413,0.1041
+"Generated (GRU, T=1.5)",1982,1998,26890,smith_waterman_blosum62,0.7005,0.6667,1.0,0.0605,0.0494
+"Generated (GRU, T=1)",1993,2000,26890,smith_waterman_blosum62,0.789,0.8,1.0,0.2449,0.1927

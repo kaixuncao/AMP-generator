@@ -1,0 +1,15 @@
+group,n,mean_prob,median_prob,sd_prob,frac_prob_ge_0.5,n_generated
+Real AMP (out-of-fold),3992,0.7726,0.8272,0.2007,0.8873,
+Real non-AMP (out-of-fold),3992,0.2517,0.2033,0.1816,0.119,
+"Generated (GRU, with special)",1982,0.5835,0.605,0.1744,0.7185,1998.0
+"Generated (GRU, no special)",0,,,,,2000.0
+Generated (GRU),1982,0.5835,0.605,0.1744,0.7185,1998.0
+Generated (LSTM),1983,0.5699,0.5933,0.1797,0.6717,2000.0
+Baseline: random,2000,0.4251,0.4233,0.1558,0.3365,2000.0
+Baseline: freq_matched,2000,0.6059,0.62,0.1517,0.7745,2000.0
+Baseline: training_sample,2000,0.7182,0.7367,0.168,0.8945,2000.0
+Baseline: bigram_markov,2000,0.6037,0.6233,0.1577,0.7575,2000.0
+"Generated (GRU, T=0.8)",1986,0.702,0.7233,0.1536,0.9063,2000.0
+"Generated (GRU, T=1.2)",1988,0.6272,0.6567,0.1758,0.7812,2000.0
+"Generated (GRU, T=1.5)",1982,0.5835,0.605,0.1744,0.7185,1998.0
+"Generated (GRU, T=1)",1993,0.6699,0.6967,0.1665,0.853,2000.0
